@@ -1,7 +1,5 @@
 FROM cyversevice/rstudio-base:latest
 
-#some package install lines here
+#install R packages for lessons 
+RUN Rscript =e 'install.packages("BayesFactor","ggplot2")'
 
-#more packages here
-
-#pull public data from iRods
