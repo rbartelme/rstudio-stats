@@ -3,13 +3,13 @@
 
 
 Bayes' Theorem:
-<br><br>
+<br>
 <img src="https://render.githubusercontent.com/render/math?math=P(A \mid B) = \frac{P(B \mid A) \, P(A)}{P(B)}">
 <br><br>
 **VS.**
 <br><br>
 Lindeberg-Levy Central Limit Theorem:
-<br><br>
+<br>
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/883b2b657efe266f298d80f8f6ae876b101307e3">
 
 
