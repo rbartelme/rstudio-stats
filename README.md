@@ -1,6 +1,13 @@
 # rstudio-stats
 #### For University of Arizona Data Science Fellow Sprint #2: Classical vs. Bayesian Statistics in R
 
+
+Bayes' Theorem
+<img src="https://render.githubusercontent.com/render/math?math=P(A \mid B) = \frac{P(B \mid A) \, P(A)}{P(B)}">
+vs.
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fda934052c42d3797714ecd1eaa90910e9f6e050">
+
+
 This repository contains a modified version of the base rstudio docker images to run in
 the CyVerse Discovery Environment: <https://de.cyverse.org>
 
