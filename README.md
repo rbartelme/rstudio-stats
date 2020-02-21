@@ -8,9 +8,9 @@ Bayes' Theorem:
 <br><br>
 **VS.**
 <br><br>
-Central Limit Theorem:
+Lindeberg-Levy Central Limit Theorem:
 <br><br>
-<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fda934052c42d3797714ecd1eaa90910e9f6e050">
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/883b2b657efe266f298d80f8f6ae876b101307e3">
 
 
 This repository contains a modified version of the base rstudio docker images to run in
