@@ -6,8 +6,8 @@ the CyVerse Discovery Environment: <https://de.cyverse.org>
 
 - Installed the following R packages:
   - [vegan](https://cran.r-project.org/web/packages/vegan/index.html)
-  - Bayes
-  - Etc.
+  - [BayesFactor](https://cran.r-project.org/web/packages/BayesFactor/index.html)
+  - [ggplot2](https://cran.r-project.org/web/packages/ggplot2/index.html)
 
 # How to Use This Docker Image on the CyVerse Discovery Environment
 
