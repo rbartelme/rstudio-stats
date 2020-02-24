@@ -1,11 +1,9 @@
 # Lesson 1: Distributions
 
-### Goal: Visualize distributions
-- To visualize distributions we will:
+### Goal: Better Data Intuition:
 	- Generate random distributions in R
-	- Exploratory graphing with base R
-	- Make nicer plots with ggplot2
-
+	- Graph Random Distributions
+	- Connect to data exploration through graphing
 
 ## Normal, or Gaussian, Distribution
 ```R
