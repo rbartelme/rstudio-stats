@@ -4,3 +4,5 @@
         - Plot and correlation: deterministic vs. bayesian statistics 
         - Essentials from probability theory
         - Bayesian thinking, or applied probability
+
+## Examining Correlations

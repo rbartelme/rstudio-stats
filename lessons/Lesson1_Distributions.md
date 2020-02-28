@@ -1,6 +1,6 @@
 # Lesson 1: Distributions
 
-### Goal: Better Data Intuition:
+### Goal: Better Data Intuition
 	- Generate random distributions in R
 	- Graph Random Distributions
 	- Connect to data exploration through graphing
