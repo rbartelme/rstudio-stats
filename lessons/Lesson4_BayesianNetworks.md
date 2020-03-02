@@ -5,7 +5,7 @@
 	- Explore hill climbing as a learning method
 	- Learn network graph plotting in R
 
-Note: this lesson modifies content from Hamed on [Rbloggers] (https://www.r-bloggers.com/bayesian-network-in-r-introduction/)
+Note: this lesson modifies content from Hamed on [Rbloggers](https://www.r-bloggers.com/bayesian-network-in-r-introduction/)
 
 
 
