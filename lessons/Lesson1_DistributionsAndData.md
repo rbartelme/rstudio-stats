@@ -62,18 +62,13 @@ barplot(dpois(0:12, lambda = 2.3), names.arg = 0:12, main = "Poisson Distributio
 
 
 
-## Data Intuition
+## Problem Set: Data Intuition
 
 random dataset, what kind of distribution is it??
 
-## Where the paths diverge...
+## Continued in Lesson 2: Where the paths diverge...
 
-Perhaps one of the biggest discrepencies between classical and Bayesian statistics is the concept of statistical power.
-Some argue that Bayesian statistics is too subjective, since the statistician establishes the prior probability values.
-However, a fair number of scientists use classical statistical tests without adequately computing an optimal sample size.
-This leads to posthoc application of parametric tests (tests designed to be used on data from a normal distribution), or
-the overuse of non-parametric tests. See [Kwak and Kim](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5370305/) for an in
+Some argue that Bayesian statistics is too subjective, since the statistician uses prior beliefs to set initial probability values.
+However, with open source it's easy for scientists abuse classical statistical tests without adequately computing an optimal sample size. See [Kwak and Kim](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5370305/) for an in
 depth review of the Central Limit Theorem and its applications in medical and biological statistics. Their example
 "Central Limit Theorem in the Real World" is excellent extra reading before Lesson 2.
-
-But what do we mean by "
