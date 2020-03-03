@@ -17,36 +17,45 @@ This code will be used to generate a random normal distribution.
 ```R
 # Set Seed number for reproducibility
 set.seed(5)
-#Normal, or Gaussian, Distribution
 # Our distribution has a mean of 3 and a standard deviation of 2.
 dist1<-rnorm(1000, mean = 3, sd = 2)
+
 #plot histogram of the random normal distribution
 hist(dist1)
-# now we'll go through some parametric statistical tests
+
+# now we'll go through some basic parametric statistical tests
 
 ```
 
 ### Bernoulli Distribution
 ```R
+
 #use the same seed set
 set.seed(5)
+
 #random binomial distribution with two outcomes 0 or 1
 rbinom(15, prob = 0.5, size = 1)
+
 #Can we plot this?
 ```
 ### Binomial Distribution
 ```R
-# same seed
+# set seed
 set.seed(5)
+
 #random binomial distribution with parameter size set to 12
+
 ```
 
 
 
 ### Poisson Distribution
 ```R
+
 #Poisson Distribution
+
 barplot(dpois(0:12, lambda = 2.3), names.arg = 0:12, main = "Poisson Distribution")
+
 ```
 
 ### Multinomial Distribution
