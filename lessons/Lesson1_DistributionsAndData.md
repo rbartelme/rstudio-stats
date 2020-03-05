@@ -1,10 +1,11 @@
 # Lesson 1: Distributions
 
 ### Lesson Goal: Better Data Intuition
-	- Study Design & Estimating Statistical power
-	- Generate random distributions in R
-	- Graph Random Distributions
+	- Study Design
+	- Model random distributions in R
+	- Plot our modeled random distributions
 	- Connect to data exploration through graphing
+	-
 
 ## Designing a Study with Statistics
 
@@ -26,6 +27,63 @@ This is *extremely important* in classical statistics with defined hypothesis te
 		* Expressed formally as 1 - P(Type II), or power = Pr(*reject H0*|*H1 is true*)
 		* Type II error is the statistical acceptance of a null hypothesis that is false
 		* This is like acquitting a criminal in court
+
+
+## Modeling Random distributions
+
+### Normal, or Gaussian, Distribution
+
+This code will be used to generate a random normal distribution.
+
+```R
+# Set Seed number for reproducibility
+set.seed(5)
+# Our distribution has a mean of 3 and a standard deviation of 2.
+dist1<-rnorm(1000, mean = 3, sd = 2)
+
+#plot histogram of the random normal distribution
+hist(dist1)
+
+```
+
+### Bernoulli Distribution
+
+Think about a coin toss, there's a 50% chance that it will come up heads (0) or tails (1). We're only going to flip a single coin each trial, so size = 1. The first numer 15 indicates how many times (n trials) we will toss the coin.
+
+```R
+#use the same seed set
+set.seed(5)
+
+#random binomial distribution with two outcomes 0 or 1 or a 'bernoulli trial'
+bern<-rbinom(15, prob = 0.5, size = 1)
+#print our random bernoulli trial output
+bern
+#rough plot of frequency of 0 vs. 1, notice the frequency is pretty close to 50%,
+# but we told R to use an odd number of trials
+hist(bern, ylim = c(0,10))
+```
+
+### Binomial Distribution
+```R
+# set seed
+set.seed(5)
+
+#random binomial distribution with parameter size set to 12
+
+```
+
+
+
+### Poisson Distribution
+```R
+
+#Poisson Distribution
+
+barplot(dpois(0:12, lambda = 2.3), names.arg = 0:12, main = "Poisson Distribution")
+
+```
+
+### Multinomial Distribution
 
 
 #### Practical Examples with power analysis
@@ -106,58 +164,6 @@ legend("topright", title="Power", as.character(p),
 ```
 
 *Examples are drawn from the following link, but this offers a [more detailed explanation of power.](https://www.statmethods.net/stats/power.html)*
-
-
-## Generating Random distributions
-
-### Normal, or Gaussian, Distribution
-
-This code will be used to generate a random normal distribution.
-
-```R
-# Set Seed number for reproducibility
-set.seed(5)
-# Our distribution has a mean of 3 and a standard deviation of 2.
-dist1<-rnorm(1000, mean = 3, sd = 2)
-
-#plot histogram of the random normal distribution
-hist(dist1)
-
-```
-
-### Bernoulli Distribution
-```R
-
-#use the same seed set
-set.seed(5)
-
-#random binomial distribution with two outcomes 0 or 1
-rbinom(15, prob = 0.5, size = 1)
-
-#Can we plot this?
-```
-### Binomial Distribution
-```R
-# set seed
-set.seed(5)
-
-#random binomial distribution with parameter size set to 12
-
-```
-
-
-
-### Poisson Distribution
-```R
-
-#Poisson Distribution
-
-barplot(dpois(0:12, lambda = 2.3), names.arg = 0:12, main = "Poisson Distribution")
-
-```
-
-### Multinomial Distribution
-
 
 
 ## Problem Set: Data Intuition
