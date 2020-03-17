@@ -91,11 +91,11 @@ barplot(dpois(0:12, lambda = 2.3), names.arg = 0:12, main = "Poisson Distributio
 
 ```
 ## Statistical Power in Classical Deterministic Statistics
--What is the right number of samples for a study?
--What are we testing?
--What actually is statistical power?
+	- What is the right number of samples for a study?
+	- What are we testing?
+	- What actually is statistical power?
 
-We are trying to establish *significance* thresholds to avoid false positives, and we want to make sure we have a large enough sample size to offset false positives and generate a statistical test with adequate *power*.
+<p>We are trying to establish *significance* thresholds to avoid false positives, and we want to make sure we have a large enough sample size to offset false positives and generate a statistical test with adequate *power*.
 </p>
 #### Practical Examples with power analysis
 Now lets go through some practical examples using power analysis with the *pwr* R library based on [Cohen, 1988](http://www.utstat.toronto.edu/~brunner/oldclass/378f16/readings/CohenPower.pdf). Don't worry about the specific statistical tests at this point, we will go over those in lesson 2. This is exercise is meant to mimic what should be done first when designing a scientific study.
