@@ -85,7 +85,18 @@ barplot(dpois(0:12, lambda = 2.3), names.arg = 0:12, main = "Poisson Distributio
 
 ### Multinomial Distribution
 
+```R
 
+#Multinomial distribution
+
+```
+## Statistical Power in Classical Deterministic Statistics
+-What is the right number of samples for a study?
+-What are we testing?
+-What actually is statistical power?
+
+We are trying to establish *significance* thresholds to avoid false positives, and we want to make sure we have a large enough sample size to offset false positives and generate a statistical test with adequate *power*.
+</p>
 #### Practical Examples with power analysis
 Now lets go through some practical examples using power analysis with the *pwr* R library based on [Cohen, 1988](http://www.utstat.toronto.edu/~brunner/oldclass/378f16/readings/CohenPower.pdf). Don't worry about the specific statistical tests at this point, we will go over those in lesson 2. This is exercise is meant to mimic what should be done first when designing a scientific study.
 
@@ -172,7 +183,7 @@ random dataset, what kind of distribution is it??
 
 ## Continued in Lesson 2: Where the paths diverge...
 
-Some argue that Bayesian statistics is too subjective, since the statistician uses prior beliefs to set initial probability values.
+<p>Some argue that Bayesian statistics is too subjective, since the statistician uses prior beliefs to set initial probability values.
 However, with open source it's easy for scientists abuse classical statistical tests without adequately computing an optimal sample size. See [Kwak and Kim](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5370305/) for an in
 depth review of the Central Limit Theorem and its applications in medical and biological statistics. Their example
-"Central Limit Theorem in the Real World" is excellent extra reading before Lesson 2.
+"Central Limit Theorem in the Real World" is excellent extra reading before Lesson 2.</p>
