@@ -1,11 +1,11 @@
 # Lesson 1: Distributions
 
 ### Lesson Goal: Better Data Intuition
-	- Study Design
-	- Model random distributions in R
-	- Plot our modeled random distributions
+
+	- Model data distributions in R
+	- Plot our modeled distributions
 	- Connect to data exploration through graphing
-	-
+	- Designing with power
 
 ## Designing a Study with Statistics
 
@@ -48,7 +48,7 @@ hist(dist1)
 
 ### Bernoulli Distribution
 
-Think about a coin toss, there's a 50% chance that it will come up heads (0) or tails (1). We're only going to flip a single coin each trial, so size = 1. The first numer 15 indicates how many times (n trials) we will toss the coin.
+Think about a coin toss, there's a 50% chance that it will come up heads (0) or tails (1). We're only going to flip a single coin each trial, so size = 1. The first number 15 indicates how many times (n trials) we will toss the coin.
 
 ```R
 #use the same seed set
