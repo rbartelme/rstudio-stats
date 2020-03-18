@@ -13,10 +13,12 @@ How do we know what is an adequate sample size for a study?
 This is *extremely important* in classical statistics with defined hypothesis tests.
 
 #### First we establish our hypotheses
+
 *H0*: Null hypothesis
 *H1*: Alternative hypothesis
 
 #### In addition to hypotheses we need to define:
+
 	1. Sample size
 	2. Effect size
 	3. Significance level (i.e. false positive; Type I error)
@@ -30,6 +32,8 @@ This is *extremely important* in classical statistics with defined hypothesis te
 
 
 ## Modeling Random distributions
+
+<p>Modeling random distributions can be useful for creating toy data to test statistical code *before* running our actual data through the analyses.</p>
 
 ### Normal, or Gaussian, Distribution
 
@@ -64,6 +68,7 @@ hist(bern, ylim = c(0,10))
 ```
 
 ### Binomial Distribution
+
 ```R
 # set seed
 set.seed(5)
@@ -75,6 +80,7 @@ set.seed(5)
 
 
 ### Poisson Distribution
+
 ```R
 
 #Poisson Distribution
@@ -90,14 +96,18 @@ barplot(dpois(0:12, lambda = 2.3), names.arg = 0:12, main = "Poisson Distributio
 #Multinomial distribution
 
 ```
+
 ## Statistical Power in Classical Deterministic Statistics
+
 	- What is the right number of samples for a study?
 	- What are we testing?
 	- What actually is statistical power?
 
 <p>We are trying to establish *significance* thresholds to avoid false positives, and we want to make sure we have a large enough sample size to offset false positives and generate a statistical test with adequate *power*.
 </p>
+
 #### Practical Examples with power analysis
+
 Now lets go through some practical examples using power analysis with the *pwr* R library based on [Cohen, 1988](http://www.utstat.toronto.edu/~brunner/oldclass/378f16/readings/CohenPower.pdf). Don't worry about the specific statistical tests at this point, we will go over those in lesson 2. This is exercise is meant to mimic what should be done first when designing a scientific study.
 
 ```R
@@ -177,9 +187,34 @@ legend("topright", title="Power", as.character(p),
 *Examples are drawn from the following link, but this offers a [more detailed explanation of power.](https://www.statmethods.net/stats/power.html)*
 
 
-## Problem Set: Data Intuition
+## Tests for distribution fitting
 
-random dataset, what kind of distribution is it??
+<p>What if we have some *actual* data? How do we know if we should use parametric (tests for normal distributions) or non-parametric (tests for non-normal distributions) even though we designed the study with power calculations?
+There is a whole ecosystem of statistical tests to determine how well a dataset fits a given distribution.</p>
+
+### Shapiro-Wilk Test of Normality
+
+<p>In base R we can invoke `shapiro.test()` on a vector. We are looking to see if the p-value from this test is greater than our significance threshold. Remember p-values are asking about significant deviation from a distribution. Since we are asking if our data are normally distributed, a p-value less than our threshold would indicate type 1 error.</p>
+
+```R
+
+set.seed(5)
+
+#Generate random normal distribution
+
+#generate random Poisson Distribution
+
+#Shapiro wilk testing
+	#random normal distribution test
+	shapiro.test(dist1)
+	#random poisson distribution test
+	shapiro.test(dist2)
+
+```
+
+
+
+
 
 ## Continued in Lesson 2: Where the paths diverge...
 
