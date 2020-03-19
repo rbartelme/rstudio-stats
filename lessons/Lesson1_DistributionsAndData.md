@@ -211,7 +211,9 @@ set.seed(5)
 	shapiro.test(dist2)
 
 ```
+### Maximum-likelihood Estimation of Distributions
 
+<p>Shapiro-Wilk works on basic cases, but what if we have a large amount of data and need to figure out the distribution in a more robust manner? This is where the `library(MASS)` function `fitdistr(x, densfun, start, …)` comes in handy. This uses Maximum-Likelihood Estimates to find the most likely distribution that fits the dataset.</p> 
 
 
 
