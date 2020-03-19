@@ -33,7 +33,7 @@ This is *extremely important* in classical statistics with defined hypothesis te
 
 ## Modeling Random distributions
 
-<p>Modeling random distributions can be useful for creating toy data to test statistical code *before* running our actual data through the analyses.</p>
+Modeling random distributions can be useful for creating toy data to test statistical code *before* running our actual data through the analyses.
 
 ### Normal, or Gaussian, Distribution
 
@@ -103,8 +103,8 @@ barplot(dpois(0:12, lambda = 2.3), names.arg = 0:12, main = "Poisson Distributio
 	- What are we testing?
 	- What actually is statistical power?
 
-<p>We are trying to establish *significance* thresholds to avoid false positives, and we want to make sure we have a large enough sample size to offset false positives and generate a statistical test with adequate *power*.
-</p>
+We are trying to establish *significance* thresholds to avoid false positives, and we want to make sure we have a large enough sample size to offset false positives and generate a statistical test with adequate *power*.
+
 
 #### Practical Examples with power analysis
 
@@ -189,12 +189,12 @@ legend("topright", title="Power", as.character(p),
 
 ## Tests for distribution fitting
 
-<p>What if we have some *actual* data? How do we know if we should use parametric (tests for normal distributions) or non-parametric (tests for non-normal distributions) even though we designed the study with power calculations?
-There is a whole ecosystem of statistical tests to determine how well a dataset fits a given distribution.</p>
+What if we have some *actual* data? How do we know if we should use parametric (tests for normal distributions) or non-parametric (tests for non-normal distributions) even though we designed the study with power calculations?
+There is a whole ecosystem of statistical tests to determine how well a dataset fits a given distribution.
 
 ### Shapiro-Wilk Test of Normality
 
-<p>In base R we can invoke `shapiro.test()` on a vector. We are looking to see if the p-value from this test is greater than our significance threshold. Remember p-values are asking about significant deviation from a distribution. Since we are asking if our data are normally distributed, a p-value less than our threshold would indicate type 1 error.</p>
+In base R we can invoke `shapiro.test()` on a vector. We are looking to see if the p-value from this test is greater than our significance threshold. Remember p-values are asking about significant deviation from a distribution. Since we are asking if our data are normally distributed, a p-value less than our threshold would indicate type 1 error.
 
 ```R
 
@@ -213,14 +213,14 @@ set.seed(5)
 ```
 ### Maximum-likelihood Estimation of Distributions
 
-<p>Shapiro-Wilk works on basic cases, but what if we have a large amount of data and need to figure out the distribution in a more robust manner? This is where the `library(MASS)` function `fitdistr(x, densfun, start, …)` comes in handy. This uses Maximum-Likelihood Estimates to find the most likely distribution that fits the dataset.</p> 
+Shapiro-Wilk works on basic cases, but what if we have a large amount of data and need to figure out the distribution in a more robust manner? This is where the `library(MASS)` function `fitdistr(x, densfun, start, …)` comes in handy. This uses Maximum-Likelihood Estimates to find the most likely distribution that fits the dataset.  
 
 
 
 
 ## Continued in Lesson 2: Where the paths diverge...
 
-<p>Some argue that Bayesian statistics is too subjective, since the statistician uses prior beliefs to set initial probability values.
+Some argue that Bayesian statistics is too subjective, since the statistician uses prior beliefs to set initial probability values.
 However, with open source it's easy for scientists abuse classical statistical tests without adequately computing an optimal sample size. See [Kwak and Kim](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5370305/) for an in
 depth review of the Central Limit Theorem and its applications in medical and biological statistics. Their example
-"Central Limit Theorem in the Real World" is excellent extra reading before Lesson 2.</p>
+"Central Limit Theorem in the Real World" is excellent extra reading before Lesson 2.
