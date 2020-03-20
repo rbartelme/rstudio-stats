@@ -36,6 +36,5 @@ the CyVerse Discovery Environment: <https://de.cyverse.org>
 	- Enter current iRODS password: cyverse-password
 	- Load a test dataset for the stats class
 
-###For more information on iRODS commands, see:
+### For more information on iRODS commands, see:
 https://https://wiki.cyverse.org/wiki/display/DS/Using+iCommands
- 
