@@ -8,7 +8,11 @@
 
 ## Data clustering
 
+There are many different ways to cluster data, all varying in their mathematical complexity and scope of application. This is an active area of algorithmic research, so new clustering methods are readily available (particular in the R codebase).
 
+Perhaps the most simplistic method of clustering is hierarchical clustering of data. This is often represented as a dendrogram, where more related data are clustered as "leaves", with the same original linkage. The scale of the dendrogram leaves and the clustering (linkage) are generally chosen *a priori* based on mathematical criteria.
+
+These concepts are essential for machine learning (ML) and data mining, since hierarchical cluster analysis is another foundational framework of ML.
 
 ## What is dimensionality?
 
