@@ -1,11 +1,13 @@
 # Lesson 2: Correlations vs. Probability
 
-### Goal: Understand the difference between correlation and probability
+### Lesson Goal: Understand the difference between correlation and probability
         - Plot and correlation: deterministic vs. bayesian statistics
         - Essentials from probability theory
         - Bayesian thinking, or applied probability
 
 ## Examining Correlations
+
+
 
 ### Gaussian (Normal) distributions
 
@@ -18,3 +20,9 @@ set.seed(5)
 
 
 ```
+
+## Basic probabilities
+
+## Bayesian Probability
+
+Probability forms the foundation of Bayesian Statistics, think about a coin toss. In a deterministic framework, you can only ask the question, "What are the odds of getting a heads or tails?" The answer? 1/2 for either heads or tails. However, Bayesian statistics lets us update the probability to account for a coin that may be weighted to come up tails more often. In a pragmatic scientific sense, this allows for more robust meta-analyses.
