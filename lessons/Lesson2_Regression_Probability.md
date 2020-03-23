@@ -1,7 +1,8 @@
-# Lesson 2: Correlations vs. Probability
+# Lesson 2: Regressions and Probability
 
 ### Lesson Goal: Understand the difference between correlation and probability
-        - Plot and correlation: deterministic vs. bayesian statistics
+
+        - Regression Analysis: Foundations
         - Essentials from probability theory
         - Bayesian thinking, or applied probability
 

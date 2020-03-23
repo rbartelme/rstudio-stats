@@ -224,7 +224,7 @@ fitdistr(x, densfun)
 ```
 ### A Bayesian method to Estimate Distributions when Missing Data
 
-New content goes here. 
+*New content goes here.*
 
 
 ## Continued in Lesson 2: Where the paths diverge...
