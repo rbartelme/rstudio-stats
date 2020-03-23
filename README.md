@@ -27,14 +27,5 @@ the CyVerse Discovery Environment: <https://de.cyverse.org>
 	- Wait for container to load
 	- When prompted at the login screen enter the username as Rstudio and password as Rstudio1
 
-## Import the data into RStudio instance with iRODS
-- Configure iRODS from the Terminal in RStudio by running the command iinit:
-	- DNS: data.cyverse.org
-	- Port number: 1247
-	- irods zone: iplant
-	- irods user name: cyverse-username
-	- Enter current iRODS password: cyverse-password
-	- Load a test dataset for the stats class
-
 ### For more information on iRODS commands, see:
 https://https://wiki.cyverse.org/wiki/display/DS/Using+iCommands
