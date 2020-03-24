@@ -14,6 +14,9 @@
 
 There are a number of statistical tests for normal distributions in the base R language. Additionally, this distribution  forms the basis of most introductory statistical courses and training. If you're familiar with line fitting in MS Excel, then you may have some familiarity with correlations and correlation coefficients (such as R<sup>2</sup>). These metrics tell us how our data distribution fits a mathematical function.
 
+In the most simplistic cases we can utilize _univariate linear regression_ or perhaps a more familiar representation is the algebraic slope intercept form: <img src="https://render.githubusercontent.com/render/math?math=y = mx %2B b">
+
+
 ```R
 
 set.seed(5)
