@@ -1,12 +1,11 @@
-# Lesson 1: Distributions
+# Lesson 2: Study Designs and Data Distributions
 
 ### Lesson Goal: Better Data Intuition
-
-	- Model data distributions in R
-	- Plot our modeled distributions
-	- Connect to data exploration through graphing
-	- Designing with power
-
+	- Basics of hypothesis testing
+	- Designing with Power
+	- Modeling data distributions in R
+	- Fitting distributions to data
+	
 ## Designing a Study with Statistics
 
 How do we know what is an adequate sample size for a study?
