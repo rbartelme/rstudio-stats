@@ -8,9 +8,20 @@
 
 ## Basic probabilities
 
+Some basic rules
+  1. The sum of all probabilities for a set of outcomes will always equal 1
+  2. In fair probabilities (think a regular coin) the probability of all events is equal
+
 ```R
 set.seed(5)
 
+library(prob)
+
+#What are the possible outcomes from a single coin toss?
+tosscoin(1, makespace=TRUE)
+
+#What about 3 coin tosses?
+tosscoin(3, makespace=TRUE)
 
 
 ```
