@@ -7,8 +7,6 @@
 
 Note: this lesson modifies content from Hamed on [Rbloggers](https://www.r-bloggers.com/bayesian-network-in-r-introduction/)
 
-
-
 #### The coronary data set contains the following 6 variables:
 
 	- Smoking (smoking): a two-level factor with levels no and yes.
@@ -33,7 +31,7 @@ data(coronary)
 
 #Load coronary dataset as a data frame
 bn_df<-data.frame(coronary)
-#learn bayesian network structure by running hill climbing algothim on 
+#learn bayesian network structure by running hill climbing algothim on
   #the data to be modeled
   #Output the hillclimb results
 hc_res <- hc(bn_df)
@@ -60,5 +58,3 @@ cpquery(fittedbn, event = (Pressure==">140"), evidence = ( Proteins=="<3" ) )
 bn.fit.xyplot(fittedbn)
 
 ```
-
-

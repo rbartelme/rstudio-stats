@@ -1,6 +1,6 @@
 # Lesson 3: Dimensionality
 
-### Lesson Goal: Understand when/how to reduce dimensions in data
+### Lesson Goal: Understand more than 2 dimensional data
 
 - How to deal with multidimensional data
 - What works best with missing data?
