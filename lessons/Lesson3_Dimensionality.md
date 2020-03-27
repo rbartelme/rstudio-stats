@@ -2,9 +2,9 @@
 
 ### Lesson Goal: Understand more than 2 dimensional data
 
-- How to deal with multidimensional data
-- What works best with missing data?
-- How to decide how many dimensions are important
+- Data clustering
+- What is dimensionality?
+- Ordination and Gradient Dimension Reduction
 
 ## Data clustering
 
@@ -36,7 +36,5 @@ Constrained or canonical correspondence analysis
 #### Principal Component Analysis (PCA)
 
 #### Principal Coordinate Analysis (PCoA)
-
-#### Multidimensional Scaling (MDS)
 
 #### Non-Metric Multidimensional Scaling (nMDS)
