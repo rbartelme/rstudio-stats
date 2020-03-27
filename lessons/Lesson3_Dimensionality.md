@@ -20,17 +20,25 @@ We are most familiar with the Euclidean mathematical space (think X-Y, or X-Y-Z 
 
 ## Ordination or Gradient analysis
 
-Sometimes it is difficult computationally or visually to represent multivariate data. Often times ordination or gradient analyses are deployed to reduce dimensionality for visualization of data or input into complex machine learning models.
-
-I have most often encountered ordination in population ecology, so we will be using some functions from the R library `vegan` to explore these concepts. A lot of the mathematics behind these representations is complex and beyond the scope of this short course. If you are interested in resources to explore these ideas in an ecological context using R, I suggest checking out the book [*Numerical Ecology*](https://www.elsevier.com/books/numerical-ecology/legendre/978-0-444-53868-0) by Pierre and Loic Legendre. These are also two contributing authors to the `vegan` library. 
+Sometimes it is difficult computationally or visually to represent multivariate data. Often times ordination or gradient analyses are deployed to reduce dimensionality for visualization of data or input into complex machine learning models. I have most often encountered ordination in population ecology, so we will be using some functions from the R library `vegan` to explore these concepts.
 
 
-### Correspondence Analysis (CA)
+ A lot of the maths behind these analyses is complex and beyond the scope of this short course. If you are interested in resources to explore these ideas in an ecological context, I suggest the book [*Numerical Ecology*](https://www.elsevier.com/books/numerical-ecology/legendre/978-0-444-53868-0) by Pierre and Loic Legendre. These are also two contributing authors to the `vegan` library.
 
-### Principal Component Analysis (PCA)
 
-### Principal Coordinate Analysis (PCoA)
+### Ordination is like ice cream, it comes in a variety of flavors...
 
-### Multidimensional Scaling (MDS)
+An entire course could be taught on this subject alone, since there are many variations on ordination. So I will choose to focus on a select few methods. This is not meant to be exhaustive, but simply to demonstrate the goal of reducing dimensions.  
 
-### Non-Metric Multidimensional Scaling (nMDS)
+#### Correspondence Analysis (CA or CCA)
+Constrained or canonical correspondence analysis
+
+#### Detrended Correspondence Analysis (DCA)
+
+#### Principal Component Analysis (PCA)
+
+#### Principal Coordinate Analysis (PCoA)
+
+#### Multidimensional Scaling (MDS)
+
+#### Non-Metric Multidimensional Scaling (nMDS)
