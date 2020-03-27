@@ -5,7 +5,7 @@
 	- Designing with Power
 	- Modeling data distributions in R
 	- Fitting distributions to data
-	
+
 ## Designing a Study with Statistics
 
 How do we know what is an adequate sample size for a study?
@@ -220,11 +220,3 @@ set.seed(5)
 
 fitdistr(x, densfun)
 ```
-
-
-## Continued in Lesson 2: Where the paths diverge...
-
-Some argue that Bayesian statistics is too subjective, since the statistician uses prior beliefs to set initial probability values.
-However, with open source it's easy for scientists abuse classical statistical tests without adequately computing an optimal sample size. See [Kwak and Kim](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5370305/) for an in
-depth review of the Central Limit Theorem and its applications in medical and biological statistics. Their example
-"Central Limit Theorem in the Real World" is excellent extra reading before Lesson 2.
