@@ -38,6 +38,15 @@ Probability forms the foundation of Bayesian Statistics, think about a coin toss
 set.seed(5)
 
 ```
+### Further Reading: Where the paths diverge...
+
+Some argue that Bayesian statistics is too subjective, since the practitioner uses prior beliefs to set initial probability values (like we did in the rain thought exercise).
+However, it's also easy for scientists to abuse classical statistical tests, or "*p-hacking*". (some best practices are covered in the next lesson).
+
+See [Kwak and Kim](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5370305/) for an in
+depth review of the Central Limit Theorem and its applications in medical and biological statistics. Their example
+"Central Limit Theorem in the Real World" is excellent extra reading.
+
 ## Examining Correlations
 
 If you're familiar with line fitting in MS Excel, then you have some experience with correlations and correlation coefficients (such as R<sup>2</sup>). These metrics tell us how our data distribution fits the mathematical function of a line mathematical function. Perhaps a more familiar representation is the algebraic slope intercept form: <img src="https://render.githubusercontent.com/render/math?math=y = mx %2B b">
