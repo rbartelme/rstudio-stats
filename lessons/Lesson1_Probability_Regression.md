@@ -38,7 +38,7 @@ set.seed(5)
 
 If you're familiar with line fitting in MS Excel, then you have some experience with correlations and correlation coefficients (such as R<sup>2</sup>). These metrics tell us how our data distribution fits the mathematical function of a line mathematical function. Perhaps a more familiar representation is the algebraic slope intercept form: <img src="https://render.githubusercontent.com/render/math?math=y = mx %2B b">
 
-## Modeling Foundations: Univariate Linear Regression
+### Modeling Foundations: Univariate Linear Regression
 
 In the most simplistic cases we can utilize _univariate linear regression_, which is just fitting a line <img src="https://render.githubusercontent.com/render/math?math=y = mx %2B b">. to a dataset and assessing how well it fits our dataset.
 
@@ -74,7 +74,7 @@ ggplot(data=mtcars,aes(x = hp, y = mpg)) +
 
 This R code is from a course I took that was taught by [Dr. Filipe Alberto](https://uwm.edu/biology/people/alberto-filipe/). This uses the RIKZ dataset which looks at benthic (ocean bottom-dwelling) fauna community diversity. This code chunk extends the linear regression modeling by incorporating: 1) real world data and 2) log10 transformation of a variable
 
-To import the data into the Rstudio container on CyVerse, open the `terminal` tab in Rstudio. And run `wget 'https://de.cyverse.org/dl/d/EA6332AE-D4C6-4E33-B86A-5F21B3807049/RIKZ.txt'`. This will load the `RIKZ` dataset into the container. 
+To import the data into the Rstudio container on CyVerse, open the `terminal` tab in Rstudio. And run `wget 'https://de.cyverse.org/dl/d/EA6332AE-D4C6-4E33-B86A-5F21B3807049/RIKZ.txt'`. This will load the `RIKZ` dataset into the container.
 
 ```R
 
