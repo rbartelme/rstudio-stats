@@ -74,6 +74,8 @@ ggplot(data=mtcars,aes(x = hp, y = mpg)) +
 
 This R code is from a course I took that was taught by [Dr. Filipe Alberto](https://uwm.edu/biology/people/alberto-filipe/). This uses the RIKZ dataset which looks at benthic (ocean bottom-dwelling) fauna community diversity. This code chunk extends the linear regression modeling by incorporating: 1) real world data and 2) log10 transformation of a variable
 
+To import the data into the Rstudio container on CyVerse, open the `terminal` tab in Rstudio. And run `wget 'https://de.cyverse.org/dl/d/EA6332AE-D4C6-4E33-B86A-5F21B3807049/RIKZ.txt'`. This will load the `RIKZ` dataset into the container. 
+
 ```R
 
 set.seed(5)
