@@ -28,7 +28,13 @@ tosscoin(3, makespace=TRUE)
 
 ## Bayesian Probability
 
-Probability forms the foundation of Bayesian Statistics, think about a coin toss. In a deterministic framework, you can only ask the question, "What are the odds of getting a heads or tails?" The answer? 1/2 for either heads or tails. However, Bayesian statistics lets us update the probability to account for a coin that may be weighted to come up tails more often. In a pragmatic scientific sense, this allows for more robust meta-analyses.
+Probability forms the foundation of Bayesian Statistics, think about a coin toss. In a deterministic framework, you can only ask the question, "What are the odds of getting a heads or tails?" The answer? 1/2 for either heads or tails.
+
+ However, Bayesian statistics lets us update the probability to account for a coin that may be weighted to come up tails more often. This framework lets us update our hypotheses and probabilities in the light of new information. Consider the probability `P()` of an event, like `Rain`, given `|`, `sunshine`, or `P(Rain|sunshine)`. We might say given our *a priori*, or previous knowledge, that the probability of it raining given sunshine is quite low. Let's say this is a 5% chance.
+
+ If we consider that we live in Tucson, it is monsoon season, and the afternoon, we can update the probability symbolically as `D_rain`. So our new probability would be expressed as `P(D_rain|sunshine, monsoons)`. Since we know that it tends to rain more during monsoon season, we could formally express this as `P(D_rain|sunshine, monsoons) >> P(Rain|sunshine)`.
+
+
 
 ```R
 set.seed(5)
