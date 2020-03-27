@@ -34,6 +34,13 @@ Probability forms the foundation of Bayesian Statistics, think about a coin toss
 
  If we consider that we live in Tucson, it is monsoon season, and the afternoon, we can update the probability symbolically as `D_rain`. So our new probability would be expressed as `P(D_rain|sunshine, monsoons)`. Since we know that it tends to rain more during monsoon season, we could formally express this as `P(D_rain|sunshine, monsoons) >> P(Rain|sunshine)`.
 
+This is best exemplified in Bayes' Theorem
+
+<br>
+<img src="https://render.githubusercontent.com/render/math?math=P(A \mid B) = \frac{P(B \mid A) \, P(A)}{P(B)}">
+<br><br>
+
+
 ```R
 set.seed(5)
 
@@ -79,8 +86,6 @@ library(ggplot2)
 ggplot(data=mtcars,aes(x = hp, y = mpg)) +
   geom_point() +
   geom_smooth()
-
-
 ```
 
 ### Linear Regressions with Variable Transformation

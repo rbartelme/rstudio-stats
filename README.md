@@ -23,9 +23,10 @@ the CyVerse Discovery Environment: <https://de.cyverse.org>
 
 # How to Use This Docker Image on the CyVerse Discovery Environment
 
+## Spin up container for VICE
+
+
+
 ## Login to RStudio Instance
 	- Wait for container to load
-	- When prompted at the login screen enter the username as Rstudio and password as Rstudio1
-
-### For more information on iRODS commands, see:
-https://https://wiki.cyverse.org/wiki/display/DS/Using+iCommands
+	- When prompted at the login screen enter the username as rstudio and password as rstudio1
