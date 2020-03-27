@@ -34,8 +34,6 @@ Probability forms the foundation of Bayesian Statistics, think about a coin toss
 
  If we consider that we live in Tucson, it is monsoon season, and the afternoon, we can update the probability symbolically as `D_rain`. So our new probability would be expressed as `P(D_rain|sunshine, monsoons)`. Since we know that it tends to rain more during monsoon season, we could formally express this as `P(D_rain|sunshine, monsoons) >> P(Rain|sunshine)`.
 
-
-
 ```R
 set.seed(5)
 
