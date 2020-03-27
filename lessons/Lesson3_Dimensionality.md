@@ -33,8 +33,6 @@ An entire course could be taught on this subject alone, since there are many var
 #### Correspondence Analysis (CA or CCA)
 Constrained or canonical correspondence analysis
 
-#### Detrended Correspondence Analysis (DCA)
-
 #### Principal Component Analysis (PCA)
 
 #### Principal Coordinate Analysis (PCoA)
