@@ -20,6 +20,9 @@ We are most familiar with the Euclidean mathematical space (think X-Y, or X-Y-Z 
 
 ## Ordination or Gradient analysis
 
+Sometimes it is difficult computationally or visually to represent multivariate data. Often times ordination or gradient analyses are deployed to reduce dimensionality for visualization of data or input into complex machine learning models.
+
+I have most often encountered ordination in population ecology, so we will be using some functions from the R library `vegan` to explore these concepts. A lot of the mathematics behind these representations is complex and beyond the scope of this short course. If you are interested in resources to explore these ideas in an ecological context using R, I suggest checking out the book [*Numerical Ecology*](https://www.elsevier.com/books/numerical-ecology/legendre/978-0-444-53868-0) by Pierre and Loic Legendre. These are also two contributing authors to the `vegan` library. 
 
 
 ### Correspondence Analysis (CA)
