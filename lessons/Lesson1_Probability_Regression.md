@@ -41,7 +41,7 @@ set.seed(5)
 ### Further Reading: Where the paths diverge...
 
 Some argue that Bayesian statistics is too subjective, since the practitioner uses prior beliefs to set initial probability values (like we did in the rain thought exercise).
-However, it's also easy for scientists to abuse classical statistical tests, or "*p-hacking*". (some best practices are covered in the next lesson).
+However, it's also easy for scientists to abuse classical statistical tests, or "*p-hack*". (Some best practices are covered in the next lesson).
 
 See [Kwak and Kim](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5370305/) for an in
 depth review of the Central Limit Theorem and its applications in medical and biological statistics. Their example
