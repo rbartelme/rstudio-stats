@@ -220,3 +220,14 @@ set.seed(5)
 
 fitdistr(x, densfun)
 ```
+
+### Bayesian Model Estimation
+
+```R
+set.seed(5)
+
+library(BAS)
+
+
+
+```

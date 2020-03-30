@@ -11,6 +11,7 @@
 Some basic rules
   1. The sum of all probabilities for a set of outcomes will always equal 1
   2. In fair probabilities (think a regular coin) the probability of all events is equal
+  3. The sample space is where we consider all probable outcomes of a given scenario
 
 ```R
 set.seed(5)
@@ -22,7 +23,6 @@ tosscoin(1, makespace=TRUE)
 
 #What about 3 coin tosses?
 tosscoin(3, makespace=TRUE)
-
 
 ```
 
@@ -40,11 +40,18 @@ This is best exemplified in Bayes' Theorem
 <img src="https://render.githubusercontent.com/render/math?math=P(A \mid B) = \frac{P(B \mid A) \, P(A)}{P(B)}">
 <br><br>
 
+Where...
 
-```R
-set.seed(5)
+*P(A)* is the probability of the hypothesis before we see the data, called the *prior*
 
-```
+*P(A|B)* is the probability of the hypothesis given observation B, called the *posterior*.
+
+*P(B|A)* is the probability of the data given the hypothesis B, or the *likelihood*.
+
+and finally, *P(B)*, the probability of the data under *any* hypothesis, this is also known as the *normalizing constant*
+
+*We'll revisit Bayes' Theorem more formally in Lesson 2 with distribution fitting*
+
 ### Further Reading: Where the paths diverge...
 
 Some argue that Bayesian statistics is too subjective, since the practitioner uses prior beliefs to set initial probability values (like we did in the rain thought exercise).
