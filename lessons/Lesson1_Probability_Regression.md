@@ -2,9 +2,10 @@
 
 ### Lesson Goal: Understand correlation and probability
 
-        - Essentials from probability theory
-        - Bayesian thinking, or applied probability
-        - Regression Analysis: Foundations of Modeling
+#### Lesson Outcomes:
+        - Essential aspects of probability
+        - Basic Bayesian thinking
+        - Basic regression analyses
 
 ## Basic probabilities
 
