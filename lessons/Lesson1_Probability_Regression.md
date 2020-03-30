@@ -1,6 +1,6 @@
 # Lesson 1: Probability and Regression
 
-### Lesson Goal: Understand the difference between correlation and probability
+### Lesson Goal: Understand correlation and probability
 
         - Essentials from probability theory
         - Bayesian thinking, or applied probability
