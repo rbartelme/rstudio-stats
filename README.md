@@ -25,7 +25,7 @@ the CyVerse Discovery Environment: <https://de.cyverse.org>
 
 ## Spin up container for VICE
 
-
+This should be shared with your CyVerse account, if not, please let me know.
 
 ## Login to RStudio Instance
 	- Wait for container to load
