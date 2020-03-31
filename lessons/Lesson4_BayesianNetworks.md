@@ -1,7 +1,7 @@
 # Lesson 4: Bayesian Networks
 
 ### Goal: Build a simple Bayesian Network
-	- Apply probability knowledge from Lesson 3 on more complex data
+	- Apply probability knowledge from Lesson 1 on more complex data
 	- Explore hill climbing as a learning method
 	- Learn network graph plotting in R
 
