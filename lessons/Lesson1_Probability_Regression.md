@@ -20,10 +20,12 @@ set.seed(5)
 library(prob)
 
 #What are the possible outcomes from a single coin toss?
-tosscoin(1, makespace=TRUE)
+tosscoin(1)
 
 #What about 3 coin tosses?
-tosscoin(3, makespace=TRUE)
+tosscoin(3)
+
+#What happens if you change the tosscoin function 'makespace' argument to true?
 
 ```
 
@@ -62,6 +64,8 @@ See [Kwak and Kim](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5370305/) for an
 depth review of the Central Limit Theorem and its applications in medical and biological statistics. Their example
 "Central Limit Theorem in the Real World" is excellent extra reading.
 
+For an in depth e-book on Bayesian Statistics in biology, I highly recommend [Modern Statistics for Modern Biology](http://web.stanford.edu/class/bios221/book/index.html) by Susan Holmes and Wolfgang Huber. This goes into Bayesian statistical applications in biology and contrasts these methods with classical statistics.
+
 ## Examining Correlations
 
 If you're familiar with line fitting in MS Excel, then you have some experience with correlations and correlation coefficients (such as R<sup>2</sup>). These metrics tell us how our data distribution fits the mathematical function of a line mathematical function. Perhaps a more familiar representation is the algebraic slope intercept form: <img src="https://render.githubusercontent.com/render/math?math=y = mx %2B b">
@@ -89,7 +93,8 @@ abline(model1, col = "blue", lty=2)
 summary(model1)
 
 #loess: locally estimated scatterplot smoothing
-# why might this be a better model for the correlation we're looking at?
+# why might this be a better model for the correlation we're looking at? Add your thoughts to the hackmd.
+
 library(ggplot2)
 ggplot(data=mtcars,aes(x = hp, y = mpg)) +
   geom_point() +
@@ -122,10 +127,9 @@ plot(RIKZ$NAP,RIKZ$Richness, ylab = "Richness", xlab = "NAP")
 
 
 #Can benthic species Richness be predicted by the height relative to  mean sea level were the sample was taken
-#let's use a linear regression model to see what is the relationship between Richness and NAP. Is there a relationship?
-# (i.e., slope is not zero), how much of the total variation in Richness is explained by NAP?
+#let's use a linear regression model to see what is the relationship between Richness and NAP. Is there a relationship? Post your thoughts on hackmd
 
-# applying the linear model function. Note how the response variable comes first followed by the ~ symbol and the linear
+# Let's apply the linear model function to find out. Note how the response variable comes first followed by the ~ symbol and the linear
 # combinations of the explanatory variables, in this case only one.
 RIKZ_model.1<-lm(log10(Richness+1) ~ NAP, data = RIKZ)
 #adding the regression line using the abline() function
@@ -146,3 +150,10 @@ summary(RIKZ_model.2)
 #let's add this model to our plot
 abline(RIKZ_model.2, col="Gray", lty=2)
 ```
+### Further Reading:
+
+[Multiple Linear Regression in Python](https://towardsdatascience.com/multiple-linear-regression-51352d687ecb)
+
+[Generalized Linear Models in R ($$)](https://link.springer.com/book/10.1007/978-1-4419-0118-7)
+
+[Fitting Polynomial Regressions in R](https://datascienceplus.com/fitting-polynomial-regression-r/)
