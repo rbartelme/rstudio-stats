@@ -155,32 +155,12 @@ bern
 hist(bern, ylim = c(0,10))
 ```
 
-### Binomial Distribution
-
-```R
-# set seed
-set.seed(5)
-
-#random binomial distribution with parameter size set to 12
-
-```
-
-
-
 ### Poisson Distribution
 
 ```R
 
 #Poisson Distribution
 barplot(dpois(0:12, lambda = 2.3), names.arg = 0:12, main = "Poisson Distribution")
-
-```
-
-### Multinomial Distribution
-
-```R
-
-#Multinomial distribution
 
 ```
 
@@ -266,14 +246,8 @@ Richness_ge$loglik
 
 ```
 
-### Bayesian Model Estimation
-
-```R
-set.seed(5)
-
-library(BayesFactor)
-
-
-
-```
 ### Further Reading
+
+[Fitting Distributions with R](https://cran.r-project.org/doc/contrib/Ricci-distributions-en.pdf)
+
+[Bayesian Fitting with Probabilistic Morphable Models](http://shapemodelling.cs.unibas.ch/pmm2017/slides/bayes.pdf)
