@@ -172,7 +172,6 @@ set.seed(5)
 ```R
 
 #Poisson Distribution
-
 barplot(dpois(0:12, lambda = 2.3), names.arg = 0:12, main = "Poisson Distribution")
 
 ```
@@ -199,10 +198,12 @@ In base R we can invoke `shapiro.test()` on a vector. We are looking to see if t
 set.seed(5)
 
 #Generate random normal distribution
+dist1 <- rnorm(1000, mean = 3, sd = 2)
 
 #generate random Poisson Distribution
+dist2 <- rpois(12, lambda=1.2)
 
-#Shapiro wilk testing
+#Shapiro-Wilk testing (approximation when n > 3)
 	#random normal distribution test
 	shapiro.test(dist1)
 	#random poisson distribution test
@@ -218,7 +219,51 @@ library(MASS)
 
 set.seed(5)
 
-fitdistr(x, densfun)
+#lets read in the RIKZ benthic fauna data again
+#remember to run wget 'https://de.cyverse.org/dl/d/EA6332AE-D4C6-4E33-B86A-5F21B3807049/RIKZ.txt' in the terminal
+
+#Reading the RIKZ data set
+RIKZ <- read.table(file = "RIKZ.txt",header = TRUE)
+
+
+#creating a variable with the richness of benthic fauna species (i.e., the number of different species)
+# observed in each station (information for each station corresponds to a row in the table)
+RIKZ$Richness <- rowSums(RIKZ[,2:76] > 0)
+
+#Now let's see what richness looks like as a histrogram
+#we'll make a histogram of probability densities of Richness
+
+hist(RIKZ$Richness, probability = TRUE)
+
+#since we loaded the MASS library at the beginning
+# we can use the fitdistr() function to fit a normal distribution to the dataset
+
+#fit the model using maxmimum likelihood estimates
+Richness_fit_normal<-fitdistr(RIKZ$Richness, densfun = "normal")
+
+#let's see the mean and sd of a normal distribution fit to the model
+Richness_fit_normal
+
+#plot the elements of the fitted distribution as a curve across the histogram
+curve(dnorm(x, mean = Richness_fit_normal$estimate[1], sd = Richness_fit_normal$estimate[2]), col ="red", lwd=2, add=TRUE)
+
+#now let's look at the log likelihood
+Richness_fit_normal$loglik
+
+#How does that look? Does it fit well?
+
+#lets try another model
+Richness_pois <- fitdistr(RIKZ$Richness, densfun = "poisson")
+
+#Is this a better fit? Slightly...
+Richness_fit_normal$loglik
+
+#let's try one last distribution
+Richness_ge <- fitdistr(RIKZ$Richness, densfun = "geometric")
+
+#This is a poor fit by MLE
+Richness_ge$loglik
+
 ```
 
 ### Bayesian Model Estimation
@@ -226,8 +271,9 @@ fitdistr(x, densfun)
 ```R
 set.seed(5)
 
-library(BAS)
+library(BayesFactor)
 
 
 
 ```
+### Further Reading
