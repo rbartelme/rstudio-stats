@@ -150,9 +150,6 @@ summary(RIKZ_model.2)
 #let's add this model to our plot
 abline(RIKZ_model.2, col="Gray", lty=2)
 
-#how well are our variables correlated?
-cor.test(y = log10(RIKZ$Richness+1), x = )
-
 ```
 ### Further Reading:
 
