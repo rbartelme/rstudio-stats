@@ -110,7 +110,7 @@ title("Sample Size Estimation for Correlation Studies\n
 legend("topright", title="Power", as.character(p), fill=colors)
 ```
 
-*Examples are drawn from the following link, but this offers a [more detailed explanation of power.](https://www.statmethods.net/stats/power.html)*
+*Examples are drawn from the following link, which offers a [more detailed explanation of power.](https://www.statmethods.net/stats/power.html)*
 
 ## Modeling Random distributions
 
