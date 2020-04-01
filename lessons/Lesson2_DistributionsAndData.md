@@ -29,6 +29,11 @@ This is *extremely important* in classical statistics with defined hypothesis te
 	* Type II error is the statistical acceptance of a null hypothesis that is false
 	* This is like acquitting a criminal in court
 
+### Further Reading
+
+[Study Design and Choosing a Statistical Test](https://www.bmj.com/about-bmj/resources-readers/publications/statistics-square-one/13-study-design-and-choosing-statisti)
+
+[Bayesian Experimental Design: A Review](https://projecteuclid.org/euclid.ss/1177009939)
 
 ## Statistical Power in Classical Deterministic Statistics
 
@@ -109,8 +114,11 @@ title("Sample Size Estimation for Correlation Studies\n
 		  Sig=0.05 (Two-tailed)")
 legend("topright", title="Power", as.character(p), fill=colors)
 ```
+#### Further Reading
 
 *Examples are drawn from the following link, which offers a [more detailed explanation of power.](https://www.statmethods.net/stats/power.html)*
+
+[Intro to Statistical Power and Power Analysis in Python](https://machinelearningmastery.com/statistical-power-and-power-analysis-in-python/)
 
 ## Modeling Random distributions
 
@@ -118,7 +126,7 @@ Modeling random distributions can be useful for creating toy data to test statis
 
 ### Normal, or Gaussian, Distribution
 
-This code will be used to generate a random normal distribution.
+This code will be used to generate a random normal distribution. This can be useful for testing your statistical code before you get data, or just for debugging.
 
 ```R
 # Set Seed number for reproducibility
@@ -149,6 +157,10 @@ hist(bern, ylim = c(0,10))
 ```
 
 ### Poisson Distribution
+
+This is a distribution of the probability of a given number of events occurring at a fixed time interval or inside a fixed space.
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Poisson_pmf.svg/650px-Poisson_pmf.svg.png)
 
 ```R
 
