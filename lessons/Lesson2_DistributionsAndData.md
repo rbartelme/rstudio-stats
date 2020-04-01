@@ -86,9 +86,7 @@ np <- length(p)
 samsize <- array(numeric(nr*np), dim=c(nr,np))
 for (i in 1:np){
 	for (j in 1:nr){
-		    result <- pwr.r.test(n = NULL, r = r[j],
-		    sig.level = .05, power = p[i],
-		    alternative = "two.sided")
+		    result <- pwr.r.test(n = NULL, r = r[j], sig.level = .05, power = p[i], alternative = "two.sided")
 		    samsize[j,i] <- ceiling(result$n)
 		  }
 		}
@@ -107,10 +105,9 @@ for (i in 1:np){
 # add annotation (grid lines, title, legend)
 abline(v=0, h=seq(0,yrange[2],50), lty=2, col="grey89")
 abline(h=0, v=seq(xrange[1],xrange[2],.02), lty=2, col="grey89")
-		title("Sample Size Estimation for Correlation Studies\n
+title("Sample Size Estimation for Correlation Studies\n
 		  Sig=0.05 (Two-tailed)")
-		legend("topright", title="Power", as.character(p),
-		   fill=colors)
+legend("topright", title="Power", as.character(p), fill=colors)
 ```
 
 		*Examples are drawn from the following link, but this offers a [more detailed explanation of power.](https://www.statmethods.net/stats/power.html)*
