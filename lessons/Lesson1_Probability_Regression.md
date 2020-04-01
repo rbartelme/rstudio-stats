@@ -123,7 +123,7 @@ RIKZ$Richness <- rowSums(RIKZ[,2:76] > 0)
 #Plotting the x y plot with: the explanatory variable NAP, the height of the sampling station relative to the mean
 # tidal level, in the x axis, and the response variable Richness in the y axis, as is the convention.
 
-plot(RIKZ$NAP,RIKZ$Richness, ylab = "Richness", xlab = "NAP")
+plot(log10(RIKZ$NAP+1),RIKZ$Richness, ylab = "Richness", xlab = "NAP")
 
 
 #Can benthic species Richness be predicted by the height relative to  mean sea level were the sample was taken
