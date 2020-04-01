@@ -160,7 +160,10 @@ hist(bern, ylim = c(0,10))
 
 This is a distribution of the probability of a given number of events occurring at a fixed time interval or inside a fixed space.
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Poisson_pmf.svg/650px-Poisson_pmf.svg.png)
+![The horizontal axis is the index k, the number of occurrences. λ is the expected number of occurrences, which need not be an integer. The vertical axis is the probability of k occurrences given λ. The function is defined only at integer values of k. The connecting lines are only guides for the eye. From [wikipedia](https://en.wikipedia.org/wiki/Poisson_distribution)](https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Poisson_pmf.svg/650px-Poisson_pmf.svg.png)
+
+
+
 
 ```R
 
