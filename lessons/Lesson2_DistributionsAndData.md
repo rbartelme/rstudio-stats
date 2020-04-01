@@ -18,32 +18,31 @@ This is *extremely important* in classical statistics with defined hypothesis te
 
 #### In addition to hypotheses we need to define:
 
-	1. Sample size
-	2. Effect size
-	3. Significance level (i.e. false positive; Type I error)
-		* Expressed formally as P(Type I error)
-		* Or Type I error is statistical rejection of a null hypothesis that is true
-		* This is like convicting an innocent defendant in court
-	4. Power (i.e. likelihood of finding results despite false negative; Type II error)
-		* Expressed formally as 1 - P(Type II), or power = Pr(*reject H0*|*H1 is true*)
-		* Type II error is the statistical acceptance of a null hypothesis that is false
-		* This is like acquitting a criminal in court
+1. Sample size
+2. Effect size
+3. Significance level (i.e. false positive; Type I error)
+	* Expressed formally as P(Type I error)
+	* Or Type I error is statistical rejection of a null hypothesis that is true
+	* This is like convicting an innocent defendant in court
+4. Power (i.e. likelihood of finding results despite false negative; Type II error)
+	* Expressed formally as 1 - P(Type II), or power = Pr(*reject H0*|*H1 is true*)
+	* Type II error is the statistical acceptance of a null hypothesis that is false
+	* This is like acquitting a criminal in court
 
 
-		## Statistical Power in Classical Deterministic Statistics
+## Statistical Power in Classical Deterministic Statistics
 
-			- What is the right number of samples for a study?
-			- What are we testing?
-			- What actually is statistical power?
+	- What is the right number of samples for a study?
+	- What are we testing?
+	- What actually is statistical power?
 
-		We are trying to establish *significance* thresholds to avoid false positives, and we want to make sure we have a large enough sample size to offset false positives and generate a statistical test with adequate *power*.
+We are trying to establish *significance* thresholds to avoid false positives, and we want to make sure we have a large enough sample size to offset false positives and generate a statistical test with adequate *power*.
 
+#### Practical Examples with power analysis
 
-		#### Practical Examples with power analysis
+	Now lets go through some practical examples using power analysis with the *pwr* R library based on [Cohen, 1988](http://www.utstat.toronto.edu/~brunner/oldclass/378f16/readings/CohenPower.pdf). Don't worry about the specific statistical tests at this point, we will go over those in lesson 2. This is exercise is meant to mimic what should be done first when designing a scientific study.
 
-		Now lets go through some practical examples using power analysis with the *pwr* R library based on [Cohen, 1988](http://www.utstat.toronto.edu/~brunner/oldclass/378f16/readings/CohenPower.pdf). Don't worry about the specific statistical tests at this point, we will go over those in lesson 2. This is exercise is meant to mimic what should be done first when designing a scientific study.
-
-		```R
+```R
 		library(pwr)
 
 		# For a one-way ANOVA comparing 5 groups, calculate the
@@ -65,11 +64,11 @@ This is *extremely important* in classical statistics with defined hypothesis te
 		# with a power of .75?
 
 		pwr.2p.test(n=30,sig.level=0.01,power=0.75)
-		```
+```
 
-		#### Plotting Power curves
+#### Plotting Power curves
 
-		```R
+```R
 		# Plot sample size curves for detecting correlations of
 		# various sizes.
 
@@ -115,7 +114,7 @@ This is *extremely important* in classical statistics with defined hypothesis te
 		  Sig=0.05 (Two-tailed)")
 		legend("topright", title="Power", as.character(p),
 		   fill=colors)
-		```
+```
 
 		*Examples are drawn from the following link, but this offers a [more detailed explanation of power.](https://www.statmethods.net/stats/power.html)*
 
