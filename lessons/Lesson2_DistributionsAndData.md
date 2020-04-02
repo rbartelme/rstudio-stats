@@ -45,7 +45,7 @@ We are trying to establish *significance* thresholds to avoid false positives, a
 
 #### Practical Examples with power analysis
 
-Now lets go through some practical examples using power analysis with the *pwr* R library based on [Cohen, 1988](http://www.utstat.toronto.edu/~brunner/oldclass/378f16/readings/CohenPower.pdf). Don't worry about the specific statistical tests at this point, we will go over those in lesson 2. This is exercise is meant to mimic what should be done first when designing a scientific study.
+Now lets go through some practical examples using power analysis with the *pwr* R library based on [Cohen, 1988](http://www.utstat.toronto.edu/~brunner/oldclass/378f16/readings/CohenPower.pdf). This is exercise is meant to mimic what should be done first when designing a scientific study.
 
 ```R
 library(pwr)
@@ -247,7 +247,7 @@ Richness_fit_normal$loglik
 Richness_pois <- fitdistr(RIKZ$Richness, densfun = "poisson")
 
 #Is this a better fit? Slightly...
-Richness_fit_normal$loglik
+Richness_pois$loglik
 
 #let's try one last distribution
 Richness_ge <- fitdistr(RIKZ$Richness, densfun = "geometric")
