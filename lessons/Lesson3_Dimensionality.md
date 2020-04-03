@@ -102,6 +102,8 @@ We are most familiar with the Euclidean mathematical space (think X-Y, or X-Y-Z 
 
 [What is dimensionality?](https://www.statisticshowto.com/dimensionality/)
 
+[Dimension Reduction in Data Science](https://www.kdnuggets.com/2019/01/dimension-reduction-data-science.html)
+
 ## Ordination or Gradient analysis
 
 Sometimes it is difficult computationally or visually to represent multivariate data. Often times ordination or gradient analyses are deployed to reduce dimensionality for visualization of data or input into complex machine learning models. I have most often encountered ordination in population ecology, so we will be using some functions from the R library `vegan` to explore these concepts, as well as examples using base R.
