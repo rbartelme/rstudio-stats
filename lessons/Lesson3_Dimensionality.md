@@ -161,3 +161,5 @@ A lot of the maths behind these analyses is complex and beyond the scope of this
 [Ordination in Python with Sklearn and Biological Examples](http://scikit-bio.org/docs/0.4.2/generated/skbio.stats.ordination.html)
 
 [EcoPy Ordination](https://ecopy.readthedocs.io/en/latest/ordination.html)
+
+[nMDS vs PCoA](http://biol09.biol.umontreal.ca/PLcourses/Comparison_nMDS_PCoA.pdf)
