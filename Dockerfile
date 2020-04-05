@@ -4,5 +4,7 @@ FROM cyversevice/rstudio-base:latest
 RUN R -e 'install.packages(c("prob","BayesFactor", "bnlearn", "ggplot2", "vegan", "dplyr", "knitr", "pwr"), dependencies = TRUE)'
 #install BAS library
 RUN R -e 'install.packages("BAS", dependencies = TRUE)'
+#install markov chain library
+RUN R -e 'install.packages("markovchain", dependencies = TRUE)'
 #shell entrypoint
 RUN chmod +x /usr/local/bin/run.sh
