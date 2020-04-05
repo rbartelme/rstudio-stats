@@ -1,10 +1,16 @@
 # Lesson 2: Study Designs and Data Distributions
 
+---
+
 ### Lesson Goal: Better Data Intuition
+
+#### Lesson Outcomes:
 	- Basics of hypothesis testing
 	- Designing with Power
 	- Modeling data distributions in R
 	- Fitting distributions to data
+
+---
 
 ## Designing a Study with Statistics
 
@@ -34,6 +40,8 @@ This is *extremely important* in classical statistics with defined hypothesis te
 [Study Design and Choosing a Statistical Test](https://www.bmj.com/about-bmj/resources-readers/publications/statistics-square-one/13-study-design-and-choosing-statisti)
 
 [Bayesian Experimental Design: A Review](https://projecteuclid.org/euclid.ss/1177009939)
+
+---
 
 ## Statistical Power in Classical Deterministic Statistics
 
@@ -120,6 +128,8 @@ legend("topright", title="Power", as.character(p), fill=colors)
 
 [Intro to Statistical Power and Power Analysis in Python](https://machinelearningmastery.com/statistical-power-and-power-analysis-in-python/)
 
+---
+
 ## Modeling Random distributions
 
 Modeling random distributions can be useful for creating toy data to test statistical code *before* running our actual data through the analyses.
@@ -174,6 +184,8 @@ The horizontal axis is the index k, the number of occurrences. λ is the expecte
 barplot(dpois(0:12, lambda = 2.3), names.arg = 0:12, main = "Poisson Distribution")
 
 ```
+
+---
 
 ## Tests for distribution fitting
 

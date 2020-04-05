@@ -1,17 +1,20 @@
 # Lesson 3: Dimensionality
 
+---
+
 ### Lesson Goal: Understand data dimensionality and clustering
 
 - Data clustering
 - What is dimensionality?
 - Ordination and Gradient Dimension Reduction
 
+---
+
 ## Data clustering
 
 There are many different ways to cluster data, all varying in their mathematical complexity and scope of application. This is an active area of algorithmic research, so new clustering methods are readily available (particular in the R codebase).
 
 Perhaps the most simplistic method of clustering is agglomerative hierarchical clustering of data. This is often represented as a dendrogram, where more related data are clustered as "leaves", with the same original linkage. The scale of the dendrogram leaves and the clustering (linkage) are generally chosen *a priori* based on mathematical criteria.
-
 
 #### Euclidean Distance with Ward linkage
 
@@ -93,6 +96,7 @@ ggplot(iris, aes(Petal.Length, Petal.Width, color = iris$cluster)) + geom_point(
 
 [Unsupervised Learning: k-means vs hierarchical clustering](https://towardsdatascience.com/unsupervised-learning-k-means-vs-hierarchical-clustering-5fe2da7c9554)
 
+---
 
 ## What is dimensionality?
 

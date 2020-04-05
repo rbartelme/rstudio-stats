@@ -1,11 +1,15 @@
 # Lesson 1: Probability and Regression
 
+---
+
 ### Lesson Goal: Understand correlation and probability
 
 #### Lesson Outcomes:
         - Essential aspects of probability
         - Basic Bayesian thinking
         - Basic regression analyses
+
+---
 
 ## Basic probabilities
 
@@ -28,6 +32,8 @@ tosscoin(3)
 #What happens if you change the tosscoin function 'makespace' argument to true?
 
 ```
+
+---
 
 ## Bayesian Probability
 
@@ -65,6 +71,8 @@ depth review of the Central Limit Theorem and its applications in medical and bi
 "Central Limit Theorem in the Real World" is excellent extra reading.
 
 For an in depth e-book on Bayesian Statistics in biology, I highly recommend [Modern Statistics for Modern Biology](http://web.stanford.edu/class/bios221/book/index.html) by Susan Holmes and Wolfgang Huber. This goes into Bayesian statistical applications in biology and contrasts these methods with classical statistics.
+
+---
 
 ## Examining Correlations
 
