@@ -4,9 +4,10 @@
 
 ### Lesson Goal: Understand data dimensionality and clustering
 
-- Data clustering
-- What is dimensionality?
-- Ordination and Gradient Dimension Reduction
+#### Lesson Outcomes:
+  - Data clustering
+  - What is dimensionality?
+  - Ordination and Gradient Dimension Reduction
 
 ---
 
