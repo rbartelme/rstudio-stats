@@ -34,3 +34,7 @@ This should be shared with your CyVerse account, if not, please let me know.
 ## Login to RStudio Instance
 	- Wait for container to load
 	- When prompted at the login screen enter the username as rstudio and password as rstudio1
+
+## GitPod Launch
+
+- Running the lesson code in Gitpod
